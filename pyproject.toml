@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "project"
+version = "0.1.0"
+description = ""
+authors = ["MishaHmilenko <mi.khmilenko@gmail.com >"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+grpcio = "^1.66.2"
+grpcio-tools = "^1.66.2"
+
+[tool.poetry.group.db-service.dependencies]
+asyncpg = "^0.29.0"
+sqlalchemy = "^2.0.35"
+alembic = "^1.13.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
